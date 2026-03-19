@@ -48,8 +48,8 @@ The system follows a modular, event-driven architecture implemented using Java a
 
 ### Premium Calculation
 
-```
-Premium = Base + (RiskScore × RiskFactor)
+```id="nbp9fd"
+Premium = Base + (RiskScore * RiskFactor)
 ```
 
 Where:
@@ -62,8 +62,8 @@ Where:
 
 ### Payout Calculation
 
-```
-Payout = DailyIncome × LossFactor
+```id="wvlm5a"
+Payout = DailyIncome * LossFactor
 ```
 
 Where:
@@ -79,14 +79,14 @@ Where:
 
 Result:
 
-* Premium = 50 + (5 × 10) = ₹100
-* Payout = 800 × 0.7 = ₹560
+* Premium = 50 + (5 * 10) = ₹100
+* Payout = 800 * 0.7 = ₹560
 
 ---
 
 ## Code Logic
 
-```java
+```java id="84un0b"
 double premium = base + (riskScore * riskFactor);
 double payout = income * 0.7;
 ```
