@@ -29,8 +29,6 @@ The system:
 * Automatically initiates claims without manual intervention
 * Instantly calculates and processes payouts
 
-This creates a seamless, zero-touch insurance experience.
-
 ---
 
 ## How we built it
