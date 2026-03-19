@@ -120,7 +120,7 @@ This ensures a seamless and zero-touch experience for the user.
 
 ---
 
-## 8. Intelligent Processing (Java-Based Logic)
+## 8. Intelligent Processing 
 
 The system uses **rule-based intelligent logic implemented in Java** to simulate AI-driven decision-making.
 
