@@ -2,7 +2,7 @@
 
 ## AI-Powered Parametric Insurance for Income Protection of Gig Delivery Workers
 
-### *A Real-Time, Event-Driven Platform for Automated Risk Assessment, Weekly Pricing, and Instant Income Compensation*
+### A Real-Time, Event-Driven Platform for Automated Risk Assessment, Weekly Pricing, and Instant Income Compensation
 
 ---
 
@@ -10,58 +10,51 @@
 
 India’s gig delivery workforce operates in highly uncertain environments where daily income depends entirely on uninterrupted working conditions. External disruptions such as heavy rainfall, extreme heat, and hazardous air quality frequently interrupt operations, leading to immediate income loss.
 
-Despite the predictability of such disruptions through environmental data, there is no system that provides **instant financial protection**. Traditional insurance systems are slow, reactive, and not designed for short-term, high-frequency disruptions.
+Despite the predictability of such disruptions through environmental data, there is no system that provides instant financial protection. Traditional insurance systems are slow, reactive, and not designed for short-term, high-frequency disruptions.
 
-This inspired us to design a **proactive, automated insurance solution** that ensures financial stability for gig workers in real time.
+This inspired us to design a proactive, automated insurance solution that ensures financial stability for gig workers in real time.
 
 ---
 
 ## What it does
 
-This project presents an **AI-powered parametric insurance platform** that protects gig delivery workers from income loss.
+This project presents an AI-powered parametric insurance platform that protects gig delivery workers from income loss.
 
 The system:
 
 * Evaluates environmental risk using real-world indicators
-* Assigns a **weekly premium model** aligned with gig worker earnings
+* Assigns a weekly premium model aligned with gig worker earnings
 * Continuously monitors disruption conditions such as AQI, temperature, and rainfall
 * Uses predefined parametric triggers to detect disruption events
 * Automatically initiates claims without manual intervention
 * Instantly calculates and processes payouts
 
-This creates a **seamless, zero-touch insurance experience**.
+This creates a seamless, zero-touch insurance experience.
 
 ---
 
 ## How we built it
 
-The system is designed using a **modular, event-driven architecture** implemented with Java and web technologies.
+The system is designed using a modular, event-driven architecture implemented with Java and web technologies.
 
 ### Core Components
 
-* **Risk Assessment Engine**
-  Computes a dynamic risk score based on environmental inputs
-
-* **Premium Calculation Engine**
-  Determines weekly pricing based on calculated risk
-
-* **Trigger Detection Engine**
-  Monitors threshold-based disruption conditions
-
-* **Automated Claim Engine**
-  Initiates payout instantly upon trigger validation
+* **Risk Assessment Engine** – Computes dynamic risk score
+* **Premium Calculation Engine** – Determines weekly pricing
+* **Trigger Detection Engine** – Monitors disruption conditions
+* **Automated Claim Engine** – Initiates payout automatically
 
 ---
 
-### Mathematical Model
+## Mathematical Model
 
-Premium calculation:
+### Premium Calculation
 
 $$
 Premium = Base \times (1 + RiskScore \times 0.1)
 $$
 
-Payout calculation:
+### Payout Calculation
 
 $$
 Payout = DailyIncome \times 0.7
@@ -69,7 +62,7 @@ $$
 
 ---
 
-### Example Scenario
+## Example Scenario
 
 Given:
 
@@ -88,7 +81,7 @@ $$
 
 ---
 
-### Code Logic Example
+## Code Logic Example
 
 ```java
 double premium = base * (1 + riskScore * 0.1);
@@ -109,8 +102,8 @@ double payout = income * 0.7;
 
 ## Accomplishments that we're proud of
 
-* Designed a complete **parametric insurance workflow**
-* Implemented **automated claim triggering without manual intervention**
+* Designed a complete parametric insurance workflow
+* Implemented automated claim triggering without manual intervention
 * Built a functional prototype demonstrating end-to-end flow
 * Successfully aligned with all constraints:
 
@@ -122,22 +115,22 @@ double payout = income * 0.7;
 
 ## What we learned
 
-* Understanding the practical application of **parametric insurance models**
-* Designing **event-driven systems** for real-time decision-making
-* Translating real-world financial problems into structured technical solutions
-* Importance of simplicity in financial product design
-* Building modular backend systems using Java
+* Understanding parametric insurance models
+* Designing event-driven systems
+* Translating real-world problems into technical solutions
+* Importance of simplicity in financial systems
+* Backend structuring using Java
 
 ---
 
 ## What's next for this project
 
-* Integration with real-time APIs (weather, pollution, alerts)
-* Implementation of fraud detection mechanisms
-* Dynamic premium adjustment using adaptive models
-* Development of a full-scale mobile application
-* Integration with payment gateways for real-time payouts
-* Advanced analytics and monitoring dashboard
+* Integration with real-time APIs
+* Fraud detection system
+* Dynamic pricing improvements
+* Mobile application development
+* Payment gateway integration
+* Analytics dashboard
 
 ---
 
@@ -151,15 +144,9 @@ double payout = income * 0.7;
 
 ---
 
-### End-to-End Workflow
+### Workflow
 
-User Input
-→ Risk Calculation
-→ Premium Assignment
-→ Continuous Monitoring
-→ Trigger Detection
-→ Claim Activation
-→ Instant Payout
+User Input → Risk → Premium → Monitoring → Trigger → Claim → Payout
 
 ---
 
@@ -177,8 +164,8 @@ Java (Spring Boot), HTML, CSS, JavaScript, REST APIs, Rule-Based AI Logic, Event
 
 ## Team – Genius League
 
-* **Kavuru Gowthami (2300032925)** – Team Lead
-* **Vuyyuru Kalyani (2300080325)**
-* **Yannam Durga Bhavani (2300032092)**
+* Kavuru Gowthami (2300032925) – Team Lead
+* Vuyyuru Kalyani (2300080325)
+* Yannam Durga Bhavani (2300032092)
 
 ---
