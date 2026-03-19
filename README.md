@@ -90,7 +90,7 @@ $$
 
 ### Code Logic Example
 
-```java id="q9c1rk"
+```java
 double premium = base * (1 + riskScore * 0.1);
 double payout = income * 0.7;
 ```
@@ -177,8 +177,8 @@ Java (Spring Boot), HTML, CSS, JavaScript, REST APIs, Rule-Based AI Logic, Event
 
 ## Team – Genius League
 
-* Kavuru Gowthami (2300032925) – Team Lead
-* Vuyyuru Kalyani (2300080325)
-* Yannam Durga Bhavani (2300032092)
+* **Kavuru Gowthami (2300032925)** – Team Lead
+* **Vuyyuru Kalyani (2300080325)**
+* **Yannam Durga Bhavani (2300032092)**
 
 ---
