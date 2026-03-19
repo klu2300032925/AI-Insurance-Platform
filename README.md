@@ -42,13 +42,13 @@ The system:
 
 ## Mathematical Model
 
-Premium:
+### Premium
 
 ```
 Premium = Base * (1 + RiskScore * 0.1)
 ```
 
-Payout:
+### Payout
 
 ```
 Payout = DailyIncome * 0.7
