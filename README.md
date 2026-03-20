@@ -65,177 +65,234 @@ The system continuously evaluates external factors that impact worker productivi
 * Local strikes and restrictions
 * Delivery zone closures
 
+These factors are used as measurable inputs for automated decision-making.
+
 ---
 
 ## 5. Parametric Trigger Framework
 
+The system replaces manual claim verification with **objective trigger-based logic**.
+
 ### Example Trigger Conditions
 
-* Rainfall > 80 mm/day
-* Temperature > 45°C
-* Air Quality Index > 400
+* Rainfall greater than 80 mm/day
+* Temperature greater than 45°C
+* Air Quality Index greater than 400
 
-When these thresholds are exceeded, the system automatically triggers compensation.
+When these thresholds are exceeded, the system validates the condition and automatically initiates compensation.
 
 ---
 
 ## 6. Weekly Pricing Model
 
-### Mathematical Logic
+The platform adopts a **weekly micro-subscription model**, ensuring alignment with gig workers’ earning cycles.
 
-Premium calculation:
+### Sample Plans
 
-$$
-Premium = Base + (RiskScore \times RiskFactor)
-$$
+| Weekly Premium | Coverage Amount |
+| -------------- | --------------- |
+| ₹10            | ₹500            |
+| ₹20            | ₹1000           |
+
+### Dynamic Pricing Factors
+
+* Geographic risk exposure
+* Historical disruption frequency
+* Environmental volatility
+* Worker activity patterns
+
+---
+
+## 6.1 Mathematical Model & Pricing Logic
+
+### Premium Calculation
+
+Premium = Base + (RiskScore * RiskFactor)
 
 Where:
 
 * Base = ₹50
 * RiskFactor = ₹10
-* RiskScore is derived from AQI, temperature, and rainfall
-
-Payout calculation:
-
-$$
-Payout = DailyIncome \times LossFactor
-$$
-
-Where:
-
-* LossFactor = 0.7
+* RiskScore is derived from AQI, temperature, and rainfall conditions
 
 ---
 
-### Example
+### Payout Calculation
+
+Payout = DailyIncome * LossFactor
+
+Where:
+
+* LossFactor = 0.7 (70% income protection)
+
+---
+
+### Example Scenario
 
 * Daily Income = ₹800
 * Risk Score = 5
 
-$$
-Premium = 50 + (5 \times 10) = ₹100
-$$
+Result:
 
-$$
-Payout = 800 \times 0.7 = ₹560
-$$
+* Premium = 50 + (5 * 10) = ₹100
+* Payout = 800 * 0.7 = ₹560
+
+---
+
+### Code Logic
+
+```java
+double premium = base + (riskScore * riskFactor);
+double payout = income * 0.7;
+```
+
+---
+
+### Workflow Integration
+
+User Input → Risk Assessment → Premium Assignment → Continuous Monitoring → Trigger Detection → Claim Activation → Instant Payout
 
 ---
 
 ## 7. System Workflow
 
-1. User inputs location and income
-2. Risk score is calculated
-3. Weekly premium is generated
-4. System monitors external data
-5. Trigger condition detected
-6. Claim initiated automatically
-7. Instant payout processed
+The system operates through an automated pipeline:
+
+1. User provides location and daily income
+2. System performs environmental risk evaluation
+3. Risk score is calculated
+4. Weekly premium is assigned
+5. System monitors disruption data
+6. Trigger condition is detected
+7. Claim is automatically initiated
+8. Payout is processed instantly
+
+This ensures a seamless and zero-touch experience for the user.
 
 ---
 
-## 8. Intelligent Processing (Java-Based)
+## 8. Intelligent Processing 
 
-* Risk score calculation using environmental parameters
-* Dynamic premium adjustment
-* Fraud detection (planned):
+The system uses **rule-based intelligent logic implemented in Java** to simulate AI-driven decision-making.
 
-  * Duplicate claim detection
-  * Location validation
+### Risk Assessment
 
----
+* Evaluates temperature, AQI, and rainfall
+* Computes a dynamic risk score
 
-## 9. Technology Stack
+### Premium Calculation
 
-* Backend: Java (Spring Boot)
-* Frontend: HTML, CSS, JavaScript
-* APIs: REST APIs
-* Data: Environmental APIs (mock/real-time)
+* Adjusts weekly premium based on risk score
 
----
+### Fraud Detection (Planned)
 
-## 10. Prototype Scope (Phase 1)
-
-* Risk calculation
-* Premium generation
-* Trigger detection
-* Automated payout
-* End-to-end simulation
+* Duplicate claim detection
+* Location validation
+* Abnormal activity identification
 
 ---
 
-## 11. Development Roadmap
+## 9. Event-Driven Architecture
 
-### Phase 1
+The platform follows an event-driven execution model:
 
-* Research
-* Design
-* Prototype
+External Data Input
+→ Condition Evaluation
+→ Trigger Detection
+→ Policy Validation
+→ Automated Claim Execution
+→ Instant Payout
 
-### Phase 2
-
-* API integration
-* Claim automation
-
-### Phase 3
-
-* Fraud detection
-* Dashboard
+This design ensures real-time responsiveness and efficiency.
 
 ---
 
-## 12. Demonstration
+## 10. Technology Stack
+
+### Backend
+
+* Java (Spring Boot)
+
+### Frontend
+
+* HTML, CSS, JavaScript
+
+### Communication
+
+* REST APIs
+
+### Data Integration
+
+* Mock or real-time environmental data APIs
+
+---
+
+## 11. Prototype Scope (Phase 1)
+
+The current prototype demonstrates the foundational capabilities:
+
+* Risk score calculation
+* Weekly premium generation
+* Parametric trigger detection
+* Automatic payout computation
+* End-to-end workflow simulation
+
+This satisfies the requirement of delivering a **minimal functional prototype**.
+
+---
+
+## 12. Development Roadmap
+
+### Phase 1 – Ideation and Foundation
+
+* Problem analysis
+* Persona definition
+* System design
+* Prototype implementation
+
+### Phase 2 – Automation and Protection
+
+* Real-time API integration
+* Policy management system
+* Automated claim processing
+
+### Phase 3 – Scale and Optimization
+
+* Fraud detection system
+* Analytics dashboard
+* Performance optimization
+
+---
+
+## 13. Demonstration
+
+Prototype video:
 
 https://drive.google.com/file/d/1ZnsEKVEp_0kEKpRf2YEvhDFFtrH1g4eY/view?usp=sharing
 
 ---
 
-## 13. Expected Impact
+## 14. Expected Impact
 
-* Financial protection for gig workers
-* Instant compensation
-* Reduced uncertainty
-* Scalable model
+The proposed system delivers:
+
+* Immediate income protection
+* Reduced financial uncertainty for gig workers
+* Automated and transparent claim processing
+* Scalable insurance model for urban ecosystems
 
 ---
 
-## 14. Team – Genius League
+## 15. Conclusion
+
+This project transforms traditional insurance into a **real-time, automated, and user-centric system** tailored for gig workers. By combining parametric triggers, intelligent risk evaluation, and instant payouts, it provides a practical and scalable solution to a critical problem in the gig economy.
+
+---
+
+## 16. Team – Genius League
 
 * Kavuru Gowthami (2300032925) – Team Lead
 * Vuyyuru Kalyani (2300080325)
 * Yannam Durga Bhavani (2300032092)
-
----
-
-## 15. Markdown & LaTeX Formatting Reference
-
-### Markdown
-
-**bold text**
-*italic text*
-
-[Example Link](http://foo.bar)
-
-![Alt text](/path/to/img.jpg)
-
----
-
-### Code Block Example
-
-```ruby
-puts "Hello World!"
-```
-
----
-
-### LaTeX Examples
-
-Inline: ( Premium = Base + RiskScore \times RiskFactor )
-
-Block:
-
-$$
-Payout = DailyIncome \times 0.7
-$$
 
 ---
