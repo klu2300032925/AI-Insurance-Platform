@@ -85,33 +85,39 @@ This enables dynamic and fair premium allocation across different regions.
 
 ### Premium Calculation
 
-Premium = Base + (RiskScore × RiskFactor)
+Premium = Base + (RiskScore * RiskFactor)
 
 Where:
 
-* Base = ₹50
-* RiskFactor = ₹10
-* RiskScore is computed using environmental indicators
+Base = ₹50
+
+RiskFactor = ₹10
+
+RiskScore is derived from AQI, temperature, and rainfall conditions
 
 ---
 
 ### Payout Calculation
 
-Payout = DailyIncome × LossFactor
+Payout = DailyIncome * LossFactor
 
 Where:
 
-* LossFactor = 0.7
+LossFactor = 0.7 (70% income protection)
 
 ---
 
 ### Example Scenario
 
 Daily Income = ₹800
+
 Risk Score = 5
 
-* Premium = ₹100
-* Payout = ₹560
+Result:
+
+Premium = 50 + (5 * 10) = ₹100
+
+Payout = 800 * 0.7 = ₹560
 
 ---
 
@@ -188,23 +194,9 @@ The system operates through a structured event-driven pipeline ensuring zero man
 
 ### Execution Flow
 
-User Enrollment
-↓
-Risk Profiling
-↓
-Continuous Data Monitoring
-↓
-Condition Evaluation
-↓
-Trigger Identification
-↓
-Policy Validation
-↓
-Automated Claim Execution
-↓
-Instant Fund Transfer
+User Enrollment → Risk Profiling → Continuous Data Monitoring → Condition Evaluation → Trigger Identification → Policy Validation → Automated Claim Execution → Instant Fund Transfer
 
-This structured vertical flow ensures accurate, fast, and fully automated claim processing without manual involvement.
+This flow ensures accurate, fast, and fully automated claim processing without manual involvement.
 
 ---
 
