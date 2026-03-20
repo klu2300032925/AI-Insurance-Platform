@@ -246,7 +246,7 @@ This flow ensures accurate, fast, and fully automated claim processing without m
 
 ## 12. Prototype
 
-🔗 https://drive.google.com/file/d/1ZnsEKVEp_0kEKpRf2YEvhDFFtrH1g4eY/view
+https://drive.google.com/file/d/1eUCR3MT24gme_HgIiIpqWxGHwwRSIgnI/view?usp=sharing
 
 ---
 
