@@ -35,7 +35,7 @@ Primarily operates in urban regions with high delivery density and demand fluctu
 
 ## 3. Key Disruptions Covered
 
-The system focuses exclusively on **income disruption events** caused by external conditions.
+The system focuses exclusively on income disruption events caused by external conditions.
 
 ### Environmental Factors
 
@@ -61,7 +61,7 @@ Once any defined threshold is exceeded, the system automatically initiates the c
 
 ## 4. Weekly Premium Model
 
-To align with the earning cycle of gig workers, the platform adopts a **weekly subscription-based pricing model**.
+To align with the earning cycle of gig workers, the platform adopts a weekly subscription-based pricing model.
 
 ### Sample Plans
 
@@ -204,7 +204,7 @@ Automated Claim Execution
 ↓
 Instant Fund Transfer
 
-This approach ensures a reliable and scalable automated compensation mechanism.
+This structured vertical flow ensures accurate, fast, and fully automated claim processing without manual involvement.
 
 ---
 
@@ -212,36 +212,18 @@ This approach ensures a reliable and scalable automated compensation mechanism.
 
 ### Worker-Centric Capabilities
 
-* **Seamless Onboarding Experience**
-  Quick and minimal-step registration tailored for mobile users
-
-* **Flexible Weekly Coverage Plans**
-  Multiple pricing options aligned with earning patterns
-
-* **Real-Time Protection Monitoring**
-  Live tracking of environmental conditions affecting income
-
-* **Zero-Touch Claim Processing**
-  Fully automated claims without manual filing
-
-* **Earnings Stability Dashboard**
-  Visual insights into coverage, payouts, and risk levels
-
----
+* Seamless onboarding experience
+* Flexible weekly coverage plans
+* Real-time protection monitoring
+* Zero-touch claim processing
+* Earnings stability dashboard
 
 ### Administrative & System Capabilities
 
-* **Centralized Risk Intelligence Dashboard**
-  Aggregated view of risk distribution across regions
-
-* **Automated Fraud Detection Engine**
-  Real-time anomaly detection for suspicious claims
-
-* **Claim Lifecycle Management System**
-  End-to-end tracking of claim initiation to payout
-
-* **Analytics & Insights Module**
-  Data-driven insights for system optimization and decision-making
+* Centralized risk intelligence dashboard
+* Automated fraud detection engine
+* Claim lifecycle management system
+* Analytics and reporting module
 
 ---
 
@@ -254,16 +236,12 @@ This approach ensures a reliable and scalable automated compensation mechanism.
 * Core system architecture design
 * Prototype development
 
----
-
 ### Phase 2 – System Automation
 
 * Integration with real-time environmental APIs
 * Implementation of policy management system
 * Development of automated trigger detection engine
 * Deployment of claim processing workflows
-
----
 
 ### Phase 3 – Intelligent Scaling
 
